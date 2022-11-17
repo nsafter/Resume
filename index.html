@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Nandini Sharma</title>
+  </head>
+
+  <body onload="draw()">
+    <canvas id="bg"></canvas>
+    <main id="content">
+      <h1>
+        <div class="hex moved"></div>
+        <div>
+          <img src="./me.png" alt="noimg" class="main-img" />
+        </div>
+        <span>Nandini Sharma</span>
+      </h1>
+      <div class="subtext" id="main">
+        <p>
+          My name's Nandini Sharma, an aspiring full stack developer with a zeal
+          to learn new things.
+        </p>
+        <p>
+          My motivation for becoming an engineer comes from the fact that I have
+          always been open to exposure, find new stuff in almost everything
+          possible. I find fascination in asking the why? behind every process.
+        </p>
+      </div>
+      <h2>
+        <div class="hex"></div>
+        <span>Skills</span>
+      </h2>
+      <div class="subtext coll">
+        <ul>
+          <li>Object-Oriented Programming using C++ and Java</li>
+          <li>Front-end languages</li>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>React</li>
+            <li>Angular</li>
+          </ul>
+          <li>Back-end</li>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+          <li>Worked on threeJS(3d library of JS)</li>
+          <li>Blender Modelling</li>
+          <li>Processing</li>
+          <li>AWS</li>
+          <li>Azure</li>
+        </ul>
+      </div>
+      <h2>
+        <div class="hex"></div>
+        <span>Hobbies & Interests</span>
+      </h2>
+      <div class="subtext coll">
+        3d creations using threeJS, bit of processing and P5JS
+      </div>
+      <h2>
+        <div class="hex"></div>
+        <span>Education</span>
+      </h2>
+      <div class="subtext coll">
+        <div>
+          <img src="./CU_logo-5.jpg" alt="noimg" class="cllg-logo" />
+        </div>
+        <div>
+          <span class="cllg-name">CHITKARA UNIVERSITY</span><br />
+          <span class="cllg-add">#Rajpura,Punjab</span>
+        </div>
+
+        <div>
+          <img src="./sch.png" alt="noimg" class="cllg-logo" />
+        </div>
+        <div>
+          <span class="cllg-name">ST. JOSEPH'S SR. SEC. SCHOOL</span><br />
+          <span class="cllg-add">#SECTOR 44-D CHANDIGARH</span>
+        </div>
+      </div>
+
+      <h2>
+        <div class="hex"></div>
+        <span>Achievements && Projects</span>
+      </h2>
+      <div class="subtext coll">
+        <p>
+          Nominated for Smart India Hackathon2022 -- an one-stop app for garbage
+          collectors and citizens for sustainable garbage collection, with
+          features like QR-code scanner, garbage collector tracker and reward
+          points concept (a gamified system)<br />
+          <a
+            href="https://www.canva.com/design/DAE9rufXuK4/4xx9qmT_ieXD7xHWTdVcYA/view?utm_content=DAE9rufXuK4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton#1"
+            >Check the ppt</a
+          >
+        </p>
+        <p>
+          Led a team of 5 members to build a college project for web development
+        </p>
+        <p>
+          Solo college project on CRUD operations using React, JSON-Server and
+          Axios
+          <a href="https://nsafter.github.io/react_crud_app/">Documentation</a>
+        </p>
+        <p>
+          Painter using ThreeJS<br />
+          select the geometry using control panel with color of your choice and
+          viola you can draw your geometry in 3d form drag mouse to see the 3d
+          effect <br />
+          <a href="https://nsafter.github.io/Mouse_events/">View Project</a>
+        </p>
+        <p>
+          Weight on different planets using ThreeJS<br />
+          <a href="https://nandinisharma225.github.io/ST3/">View Project</a>
+        </p>
+      </div>
+
+      <h2>
+        <div class="hex"></div>
+        <span>Connect</span>
+      </h2>
+      <div class="subtext coll">
+        <ul>
+          <li><a href="https://github.com/nsafter">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/nsafter/">LinkedIn</a></li>
+          <li>Phone: +91 7888393319</li>
+          <li>
+            Primary E-mail:
+            <a href="mailto:nandini1951.be20@chitkara.edu.in"
+              >nandini1951.be20@chitkara.edu.in</a
+            >
+          </li>
+          <li>
+            Secondary E-mail:
+            <a href="mailto:nsharma63205@gmail.com">nsharma63205@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one">
+      <path
+        d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"
+      ></path>
+    </svg>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="two">
+      <path
+        d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"
+      ></path>
+    </svg>
+    <div id="hex-holder">
+      <div class="hex" id="uno"></div>
+      <div class="hex" id="dos"></div>
+      <div class="hex" id="tres"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
